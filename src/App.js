@@ -1,15 +1,13 @@
-import React from 'react';
-import VideoCall from './components/videoCall';
-import ChatBot from './components/chatbot';
 
-const App = () => {
+import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+
+function App() {
   return (
-    <div>
-      <h1>Customer Support</h1>
-      <VideoCall />
-      <ChatBot />
+    <div className="App">
+      <Navbar/>
     </div>
   );
-};
+}
 
 export default App;
