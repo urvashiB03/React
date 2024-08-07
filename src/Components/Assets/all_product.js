@@ -1,4 +1,3 @@
-import w1 from './w1.jpg';
 import w2 from './w2.jpg';
 import w3 from './w3.jpg';
 import w4 from './w4.jpg';
@@ -18,7 +17,6 @@ import w17 from './w17.jpg';
 import w18 from './w18.jpg';
 import w19 from './w19.jpg';
 import w20 from './w20.jpg';
-import m1 from './m1.jpg';
 import m2 from './m2.jpg';
 import m3 from './m3.jpg';
 import m4 from './m4.jpg';
@@ -38,7 +36,6 @@ import m17 from './m17.jpg';
 import m18 from './m18.jpg';
 import m19 from './m19.jpg';
 import m20 from './m20.jpg';
-import f1 from './f1.jpg';
 import f2 from './f2.jpg';
 import f3 from './f3.jpg';
 import f4 from './f4.jpg';
@@ -64,424 +61,461 @@ import f20 from './f20.jpg';
 
 let all_product = [
     {
-        id: 1,
-        description: "Women Summer Floral Casual Dress Sleeveless Halter Open Back Pleated Short Boho Strap Skirt Belt Green Dresses Women Summer Dress For Women Dress",
-        category: "womens",
-        image: w1,
-        price: 11
-    },
-    {
         id: 2,
-        description: "Professional Clothing for the Working Women",
+        name: "Professional Clothing for the Working Women",
         category: "womens",
         image: w2,
-        price: 17.99
+        new_price: 17.99,
+        old_price: 21
     },
     {
         id: 3,
-        description: "Shirt with printed skirt",
+        name: "Shirt with printed skirt",
         category: "womens",
         image: w3,
-        price: 21.99
+        new_price: 21.99,
+        old_price: 30
     },
     {
         id: 4,
-        description: "Women's Dresses",
+        name: "Women's Dresses",
         category: "womens",
         image: w4,
-        price: 9.99
+        new_price: 9.99,
+        old_price: 15
     },
     {
         id: 5,
-        description: "Women's casual",
+        name: "Women's casual",
         category: "womens",
         image: w5,
-        price: 15.99
+        new_price: 15.99,
+        old_price: 35
     },
     {
         id: 6,
-        description: "white top",
+        name: "white top",
         category: "womens",
         image: w6,
-        price: 5.99
+        new_price: 5.99,
+        old_price: 14
     },
     {
         id: 7,
-        description: "Plain balck t-shirt",
+        name: "Plain balck t-shirt",
         category: "womens",
         image: w7,
-        price: 9.99
+        new_price: 9.99,
+        old_price: 12
     },
     {
         id: 8,
-        description: "Long white dress",
+        name: "Long white dress",
         category: "womens",
         image: w8,
-        price: 12.99
+        new_price: 12.99,
+        old_price: 20
     },
     {
         id: 9,
-        description: "Designer Clothing and Accessories for Women",
+        name: "Designer Clothing and Accessories for Women",
         category: "womens",
         image: w9,
-        price: 7
+        new_price: 7,
+        old_price: 18
     },
     {
         id: 10,
-        description: "Formal jacket",
+        name: "Formal jacket",
         category: "womens",
         image: w10,
-        price: 22.99
+        new_price: 22.99,
+        old_price: 55
     },
     {
         id: 11,
-        description: "Printed long sleeve t-shirt",
+        name: "Printed long sleeve t-shirt",
         category: "womens",
         image: w11,
-        price: 10.99
+        new_price: 10.99,
+        old_price: 19
     },
     {
         id: 12,
-        description: "Pink midid dress",
+        name: "Pink midid dress",
         category: "womens",
         image: w12,
-        price: 9.99
+        new_price: 9.99,
+        old_price: 17
     },
     {
         id: 13,
-        description: "Body-hugging dress",
+        name: "Body-hugging dress",
         category: "womens",
         image: w13,
-        price: 9.99
+        new_price: 9.99,
+        old_price: 13
     },
     {
         id: 14,
-        description: "Midi sky dress for summer",
+        name: "Midi sky dress for summer",
         category: "womens",
         image: w14,
-        price: 15.99
+        new_price: 15.99,
+        old_price: 20
     },
     {
         id: 15,
-        description: "Multicolures co-ord set",
+        name: "Multicolures co-ord set",
         category: "womens",
         image: w15,
-        price: 10
+        new_price: 10,
+        old_price: 12
     },
     {
         id: 16,
-        description: "Printed top",
+        name: "Printed top",
         category: "womens",
         image: w16,
-        price: 9.99
+        new_price: 9.99,
+        old_price: 13
     },
     {
         id: 17,
-        description: "Sky long dress without sleeve",
+        name: "Sky long dress without sleeve",
         category: "womens",
         image: w17,
-        price: 24.99
+        new_price: 24.99,
+        old_price: 44
     },
     {
         id: 18,
-        description: "Black jumpsuit",
+        name: "Black jumpsuit",
         category: "womens",
         image: w18,
-        price: 25
+        new_price: 25,
+        old_price: 41
     },
     {
         id: 19,
-        description: "Summer dress",
+        name: "Summer dress",
         category: "womens",
         image: w19,
-        price: 11.99
+        new_price: 11.99,
+        old_price: 21
     },
     {
         id: 20,
-        description: "Pink dress",
+        name: "Pink dress",
         category: "womens",
         image: w20,
-        price: 15
-    },
-    {
-        id: 31,
-        description: "Bloom Cap Sleeve Polo Shirt | Women's Golf Polo Shirt ",
-        category: "mens",
-        image: m1,
-        price: 9.99
+        new_price: 15,
+        old_price: 19
     },
     {
         id: 32,
-        description: "AXUL | Premium Men's Clothing",
+        name: "AXUL | Premium Men's Clothing",
         category: "mens",
         image: m2,
-        price: 19.99
+        new_price: 19.99,
+        old_price: 30.99
     },
     {
         id: 33,
-        description: "Men's Fashion | Branded Fashion | Men's Clothes ",
+        name: "Men's Fashion | Branded Fashion | Men's Clothes ",
         category: "mens",
         image: m3,
-        price: 14.99
+        new_price: 14.99,
+        old_price: 25
     },
     {
         id: 34,
-        description: "Men's Fashion Trends with Longevity",
+        name: "Men's Fashion Trends with Longevity",
         category: "mens",
         image: m4,
-        price: 29.99
+        new_price: 29.99,
+        old_price: 40
     },
     {
         id: 35,
-        description: "European Men's Fashion Style",
+        name: "European Men's Fashion Style",
         category: "mens",
         image: m5,
-        price: 19.99
+        new_price: 19.99,
+        old_price: 20
     },
     {
         id: 36,
-        description: "Sky good fabric shirt",
+        name: "Sky good fabric shirt",
         category: "mens",
         image: m6,
-        price: 9.99
+        new_price: 9.99,
+        old_price: 17
     },
     {
         id: 37,
-        description: "White T-shirt with quarter sleeve ",
+        name: "White T-shirt with quarter sleeve ",
         category: "mens",
         image: m7,
-        price: 15
+        new_price: 15,
+        old_price: 32
     },
     {
         id: 38,
-        description: "White T-shirt with quarter sleeve ",
+        name: "White T-shirt with quarter sleeve ",
         category: "mens",
         image: m8,
-        price: 50
+        new_price: 50,
+        old_price: 85
     },
     {
         id: 39,
-        description: "White T-shirt with quarter sleeve ",
+        name: "White T-shirt with quarter sleeve ",
         category: "mens",
         image: m9,
-        price: 33
+        new_price: 33,
+        old_price: 55
     },
     {
         id: 40,
-        description: "White T-shirt with quarter sleeve ",
+        name: "White T-shirt with quarter sleeve ",
         category: "mens",
         image: m10,
-        price: 22
+        new_price: 22,
+        old_price: 37
     },
     {
         id: 41,
-        description: "White T-shirt with quarter sleeve ",
+        name: "White T-shirt with quarter sleeve ",
         category: "mens",
         image: m11,
-        price: 11
+        new_price: 11,
+        old_price: 32
     },
     {
         id: 42,
-        description: "White T-shirt with quarter sleeve ",
+        name: "White T-shirt with quarter sleeve ",
         category: "mens",
         image: m12,
-        price: 17
+        new_price: 17,
+        old_price: 22
     },
     {
         id: 43,
-        description: "White T-shirt with quarter sleeve ",
+        name: "White T-shirt with quarter sleeve ",
         category: "mens",
         image: m13,
-        price: 18.99
+        new_price: 18.99,
+        old_price: 28
     },
     {
         id: 44,
-        description: "White T-shirt with quarter sleeve ",
+        name: "White T-shirt with quarter sleeve ",
         category: "mens",
         image: m14,
-        price: 15.8
+        new_price: 15.80,
+        old_price: 20
     },
     {
         id: 45,
-        description: "White T-shirt with quarter sleeve ",
+        name: "White T-shirt with quarter sleeve ",
         category: "mens",
         image: m15,
-        price: 9
+        new_price: 9,
+        old_price: 12
     },
     {
         id: 46,
-        description: "White T-shirt with quarter sleeve ",
+        name: "White T-shirt with quarter sleeve ",
         category: "mens",
         image: m16,
-        price: 5.99
+        new_price: 5.99,
+        old_price: 10
     },
     {
         id: 47,
-        description: "White T-shirt with quarter sleeve ",
+        name: "White T-shirt with quarter sleeve ",
         category: "mens",
         image: m17,
-        price: 19
+        new_price: 19,
+        old_price: 23
     },
     {
         id: 48,
-        description: "White T-shirt with quarter sleeve ",
+        name: "White T-shirt with quarter sleeve ",
         category: "mens",
         image: m18,
-        price: 6.5
+        new_price: 6.5,
+        old_price: 14
     },
     {
         id: 49,
-        description: "White T-shirt with quarter sleeve ",
+        name: "White T-shirt with quarter sleeve ",
         category: "mens",
         image: m19,
-        price: 55
+        new_price: 55,
+        old_price: 88
     },
     {
         id: 50,
-        description: "White T-shirt with quarter sleeve ",
+        name: "White T-shirt with quarter sleeve ",
         category: "mens",
         image: m20,
-        price: 12
-    },
-    {
-        id: 51,
-        description: "Melanie Open Corner Sofa",
-        category: "furniture",
-        image: f1,
-        price: "£3,800"
+        new_price: 12,
+        old_price: 21
     },
     {
         id: 52,
-        description: "Taylor sofa sleeper",
+        name: "Taylor sofa sleeper",
         category: "furniture",
         image: f2,
-        price: 4480
+        new_price: 4480,
+        old_price: 5890
     },
     {
         id: 53,
-        description: "The Traditional Elmstead Sofa",
+        name: "The Traditional Elmstead Sofa",
         category: "furniture",
         image: f3,
-        price: 9120
+        new_price: 9120,
+        old_price: 9990
     },
     {
         id: 54,
-        description: "Bubble Boucle Sofa",
+        name: "Bubble Boucle Sofa",
         category: "furniture",
         image: f4,
-        price: 1356
+        new_price: 1356,
+        old_price: 2000
     },
     {
         id: 55,
-        description: "Ellena Grey 2 Seater Recliner Sofa with Storage",
+        name: "Ellena Grey 2 Seater Recliner Sofa with Storage",
         category: "furniture",
         image: f5,
-        price: 799
+        new_price: 799,
+        old_price: 1000
     },
     {
         id: 56,
-        description: "Modern Chesterfield 2 Seater Sofa, Mink Velvet with Gold Legs",
+        name: "Modern Chesterfield 2 Seater Sofa, Mink Velvet with Gold Legs",
         category: "furniture",
         image: f6,
-        price: 599
+        new_price: 599,
+        old_price: 867
     },
     {
         id: 57,
-        description: "Athena Luxury Italian Leather Sofas by Deluca Interiors",
+        name: "Athena Luxury Italian Leather Sofas by Deluca Interiors",
         category: "furniture",
         image: f7,
-        price: 2495
+        new_price: 2495,
+        old_price: 2985
     },
     {
         id: 58,
-        description: "Columbus Small Leather Sofa",
+        name: "Columbus Small Leather Sofa",
         category: "furniture",
         image: f8,
-        price: 975
+        new_price: 975,
+        old_price: 1000
     },
     {
         id: 59,
-        description: "Roma Large Sofa - Oakland Furnishings",
+        name: "Roma Large Sofa - Oakland Furnishings",
         category: "furniture",
         image: f9,
-        price: 850
+        new_price: 850,
+        old_price: 1200
     },
     {
         id: 60,
-        description: "KC Sofas",
+        name: "KC Sofas",
         category: "furniture",
         image: f10,
-        price: 499
+        new_price: 499,
+        old_price: 700
     },
     {
         id: 61,
-        description: "Habitat Newell Fabric 2 Seater Sofa - Light Grey",
+        name: "Habitat Newell Fabric 2 Seater Sofa - Light Grey",
         category: "furniture",
         image: f11,
-        price: 570
+        new_price: 570,
+        old_price: 890
     },
     {
         id: 62,
-        description: "Corner Sofa | Leather | Curiosity Interiors",
+        name: "Corner Sofa | Leather | Curiosity Interiors",
         category: "furniture",
         image: f12,
-        price: 899
+        new_price: 899,
+        old_price: 1040
     },
     {
         id: 63,
-        description: "Carnaby Small U Shape Sofa with Footstool Grey",
+        name: "Carnaby Small U Shape Sofa with Footstool Grey",
         category: "furniture",
         image: f13,
-        price: 999
+        new_price: 999,
+        old_price: 1344
     },
     {
         id: 64,
-        description: "Penny Sofa 4 Seater With 1 Seat Cushion",
+        name: "Penny Sofa 4 Seater With 1 Seat Cushion",
         category: "furniture",
         image: f14,
-        price: 4350
+        new_price: 4350,
+        old_price: 4444
     },
     {
         id: 65,
-        description: "Camille - Italian Leather Sofa - 3 Seater and 2 Armchairs - New Room StyleNew Room Style",
+        name: "Camille - Italian Leather Sofa - 3 Seater and 2 Armchairs - New Room StyleNew Room Style",
         category: "furniture",
         image: f15,
-        price: 1299
+        new_price: 1299,
+        old_price: 1500
     },
     {
         id: 66,
-        description: "James 2 Seater Sofa - price | SLF24",
+        name: "James 2 Seater Sofa - new_price | SLF24",
         category: "furniture",
         image: f16,
-        price: 650
+        new_price: 650,
+        old_price: 789
     },
     {
         id: 67,
-        description: "VIMLE 3 seater sofa with chaise longue, Hallarp grey",
+        name: "VIMLE 3 seater sofa with chaise longue, Hallarp grey",
         category: "furniture",
         image: f17,
-        price: 789
+        new_price: 789,
+        old_price: 999
     },
     {
         id: 68,
-        description: "Cane-line Scale corner sofa w/ table & armrest",
+        name: "Cane-line Scale corner sofa w/ table & armrest",
         category: "furniture",
         image: f18,
-        price: 1300
+        new_price: 1300,
+        old_price: 1459
     },
     {
         id: 69,
-        description: " Wooden Sofa Set",
+        name: " Wooden Sofa Set",
         category: "furniture",
         image: f19,
-        price: 1480
+        new_price: 1480,
+        old_price: 1577
     },
     {
         id: 70,
-        description: "James 2 Seater Sofa ",
+        name: "James 2 Seater Sofa ",
         category: "furniture",
         image: f20,
-        price: 555
+        new_price: 555,
+        old_price: 776
     }
+];
 
-]
+export default all_product;
